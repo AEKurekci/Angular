@@ -1,0 +1,8 @@
+<h1>Photos</h1>
+
+<ul>
+    <li *ngFor="let photo of photos$">
+        <a routerLink="">{{photo.title}}</a>
+        <p><img src="{{photo.thumbnailUrl}}" alt=""></p>
+    </li>
+</ul>

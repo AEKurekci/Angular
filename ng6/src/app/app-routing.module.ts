@@ -2,7 +2,8 @@ import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { UsersComponent } from './users/users.component'
 import { PostsComponent } from './posts/posts.component'
-import { DetailsComponent } from './details/details.component'
+import { DetailsComponent } from './details-user/details.component'
+import { PhotosComponent } from './photos/photos.component'
 
 
 const routes: Routes = [
@@ -18,6 +19,10 @@ const routes: Routes = [
     path: 'posts',
     component: PostsComponent
   },
+  {
+    path: 'photos',
+    component: PhotosComponent
+  }
 ];
 
 @NgModule({
