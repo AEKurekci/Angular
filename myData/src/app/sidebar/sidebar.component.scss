@@ -1,0 +1,26 @@
+nav {
+    background: rgb(255, 152, 18);
+    width: 100%;
+
+    ul {
+        list-style-type: none;
+        padding: 20px;
+        margin: 0px;
+        
+        li {
+            display: inline;
+            a {
+                color: #fff;
+                padding: 20px;
+            }
+            a:hover{
+                background-color: rgb(253, 97, 6);
+            }
+
+            .activated {
+                background-color: #fffb00;
+            }
+        }
+    }
+    
+}
