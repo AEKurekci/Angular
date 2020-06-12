@@ -10,6 +10,11 @@ export const products = [
     description: 'A great phone with one of the best cameras'
   },
   {
+    name: 'Phone Deluxe',
+    price: 599,
+    description: 'A great phone with fantastic features'
+  },
+  {
     name: 'Phone Standard',
     price: 299,
     description: ''

@@ -1,13 +1,18 @@
-<h3>Wikipedia Web Crawler Data</h3>
-<div *ngIf="user_data">
-    <table>
-        <tr>
-            <td>User Type</td> <td>Degree</td> <td>Year</td> <td>Month</td>
-            <td>Day</td> <td>Post Size</td> <td>Change Size</td> <td>Suspect</td>
-        </tr>
-        <tr *ngFor="let user of user_data">
-            <td>{{user.user_type}}</td> <td>{{user.degree}}</td> <td>{{user.year}}</td> <td>{{user.month}}</td>
-            <td>{{user.day}}</td> <td>{{user.post_size}}</td> <td>{{user.change_size}}</td> <td>{{user.class_suspect}}</td>
-        </tr>
-    </table>
+<div>
+    <app-sidebar-in-tab></app-sidebar-in-tab>
+    <div id="content">
+        <h3>Wikipedia Web Crawler Data</h3>
+        <div *ngIf="user_data">
+            <table>
+                <tr>
+                    <td>User Type</td> <td>Degree</td> <td>Year</td> <td>Month</td>
+                    <td>Day</td> <td>Post Size</td> <td>Change Size</td> <td>Suspect</td>
+                </tr>
+                <tr *ngFor="let user of user_data | async">
+                    <td>{{user.user_type}}</td> <td>{{user.degree}}</td> <td>{{user.year}}</td> <td>{{user.month}}</td>
+                    <td>{{user.day}}</td> <td>{{user.post_size}}</td> <td>{{user.change_size}}</td> <td>{{user.class_suspect}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </div>
