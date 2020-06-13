@@ -12,14 +12,12 @@ body {
     width: 100%;
 
     #tab{
-        padding: 30px 50px;
-
+        
         ul {
             list-style-type: none;
             margin:0;padding:0;
         
             li {
-                background: #fff;
                 border-radius: 8px;
                 padding: 20px;
                 margin-bottom: 8px;
@@ -30,17 +28,31 @@ body {
                     font-weight: bold;
                     color:rgb(255, 174, 0);
                 }
+            }
+        }
+        #content{
+            display: grid;
+            grid-template-columns: 90px auto;
+            height: 100%;
+            #intab{
+                padding: 30px 50px;
         
                 ul {
-                    margin-top: 20px;
-                    
+                    list-style-type: none;
+                    margin:0;padding:0;
+                
                     li {
-                        padding:0;
-        
+                        border-radius: 8px;
+                        padding: 20px;
+                        margin-bottom: 8px;
+                
                         a {
-                            font-size: 1em;
-                            font-weight: 300;
+                            font-size: 1.5em;
+                            text-decoration: none;
+                            font-weight: bold;
+                            color:rgb(255, 174, 0);
                         }
+
                     }
                 }
             }

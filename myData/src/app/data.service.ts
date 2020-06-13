@@ -11,4 +11,12 @@ export class DataService {
   get_users(){
     return this.http.get('assets/json_data/wikipedia_history_suspects_I_world_war.json');
   }
+
+  get_bar_pict(){
+    return 'assets/graphics/wikipedia_history_suspects_I_world_war_count_plot.png';
+  }
+
+  get_pie_pict(){
+    return 'assets/graphics/wikipedia_history_suspects_I_world_war_pie_plot.png';
+  }
 }

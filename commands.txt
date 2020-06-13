@@ -1,0 +1,4 @@
+ng new app_name #creates a new project
+ng new app_name --style=scss --routing
+code . # proje dosyasında visual studio code açar 
+ng serve --open #opens the server
