@@ -1,1 +1,20 @@
-<p>dashboard works!</p>
+<div id="main">
+    <img id="advert" src={{cars[0].img}}>
+    <div id="products">
+        <div id="house">
+            <ul *ngIf="houses">
+                <li *ngFor="let house of houses">
+                    {{house.price | currency}}
+                </li>
+            </ul>
+        </div>
+        <div id="cars">
+            <ul *ngIf="cars">
+                <li *ngFor="let car of cars">
+                    <img src={{car.img}}>
+                    {{car.model}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
