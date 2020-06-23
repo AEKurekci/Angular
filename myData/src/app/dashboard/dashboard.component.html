@@ -22,7 +22,7 @@
     <div id="products">
         <div id="house">
             <ul *ngIf="houses">
-                <li *ngFor="let house of houses">
+                <li id="item" *ngFor="let house of houses">
                     <img src={{house.img}}>
                     <ul>
                         <li>
@@ -46,7 +46,7 @@
         </div>
         <div id="car">
             <ul *ngIf="cars">
-                <li *ngFor="let car of cars">
+                <li id="item" *ngFor="let car of cars">
                     <img src={{car.img}}>
                     <ul>
                         <li>
