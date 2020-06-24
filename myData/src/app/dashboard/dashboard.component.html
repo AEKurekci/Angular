@@ -1,6 +1,5 @@
 <div id="main">
     <div id="advert">
-        <img src={{cars[0].img}}>
         <ul id="adv_ul">
             <li>
                 <h3>{{cars[0].brand}}</h3>
@@ -18,12 +17,13 @@
                 {{cars[0].explanation}}
             </li>
         </ul>
+        <div><img src={{cars[0].img}}></div>
     </div>
     <div id="products">
         <div id="house">
             <ul *ngIf="houses">
                 <li id="item" *ngFor="let house of houses">
-                    <img src={{house.img}}>
+                    <div id="img"><img src={{house.img}}></div>
                     <ul>
                         <li>
                             <h3>{{house.type}}</h3>
@@ -47,7 +47,7 @@
         <div id="car">
             <ul *ngIf="cars">
                 <li id="item" *ngFor="let car of cars">
-                    <img src={{car.img}}>
+                    <div id="img"><img src={{car.img}}></div>
                     <ul>
                         <li>
                             <h3>{{car.brand}}</h3>

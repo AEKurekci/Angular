@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { WarOfWorld1Component } from './war-of-world1/war-of-world1.component';
 import { WarOfWorld1GraphicComponent } from './war-of-world1-graphic/war-of-world1-graphic.component';
 import { WarOfWorld1Graphic2Component } from './war-of-world1-graphic2/war-of-world1-graphic2.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AnimationSampleComponent } from './animation-sample/animation-sample.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,14 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     WarOfWorld1Component,
     WarOfWorld1GraphicComponent,
     WarOfWorld1Graphic2Component,
-    DashboardComponent
+    DashboardComponent,
+    AnimationSampleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

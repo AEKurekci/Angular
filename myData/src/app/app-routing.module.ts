@@ -5,6 +5,7 @@ import { WarOfWorld1Component } from './war-of-world1/war-of-world1.component';
 import { WarOfWorld1GraphicComponent } from './war-of-world1-graphic/war-of-world1-graphic.component';
 import { WarOfWorld1Graphic2Component } from './war-of-world1-graphic2/war-of-world1-graphic2.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AnimationSampleComponent } from './animation-sample/animation-sample.component';
 
 
 const routes: Routes = [
@@ -34,6 +35,10 @@ const routes: Routes = [
         component: WarOfWorld1Graphic2Component
       }
     ]
+  },
+  {
+    path: 'animation',
+    component: AnimationSampleComponent
   }
 ];
 
