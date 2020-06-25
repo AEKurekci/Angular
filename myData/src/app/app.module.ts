@@ -13,6 +13,8 @@ import { WarOfWorld1GraphicComponent } from './war-of-world1-graphic/war-of-worl
 import { WarOfWorld1Graphic2Component } from './war-of-world1-graphic2/war-of-world1-graphic2.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AnimationSampleComponent } from './animation-sample/animation-sample.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { HouseDetailComponent } from './house-detail/house-detail.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { AnimationSampleComponent } from './animation-sample/animation-sample.co
     WarOfWorld1GraphicComponent,
     WarOfWorld1Graphic2Component,
     DashboardComponent,
-    AnimationSampleComponent
+    AnimationSampleComponent,
+    ProductDetailComponent,
+    HouseDetailComponent
   ],
   imports: [
     BrowserModule,
