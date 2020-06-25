@@ -1,1 +1,4 @@
-<div class="example-container" [class.mat-elevation-z8]="true">deneme</div>
+<div [@openClose]="isOpen ? 'open': 'closed'">
+    <p>the box is now {{ isOpen ? 'Open': 'Closed'}}</p>
+</div>
+<button (click)="toggle()">Toggle</button>
