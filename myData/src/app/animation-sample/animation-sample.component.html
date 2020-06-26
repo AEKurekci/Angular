@@ -7,3 +7,8 @@
     <p>the box is now {{in ? 'IN' : 'OUT'}}</p>
 </div>
 <button (click)="move()"> Move </button>
+
+<div [@keyframeTrigger]="isActive ? 'active' : 'inactive'">
+    <p>Selam</p>
+</div>
+<button (click)="changeActivation()"> Move </button>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { trigger, state, style, animate, transition } from '@angular/animations';
+import { trigger, state, style, animate, transition, keyframes } from '@angular/animations';
 
 @Component({
   selector: 'app-animation-sample',
@@ -28,13 +28,22 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
       state('left', style({
         transform: 'translateX(0)'
       }))
+    ]),
+    trigger('keyframeTrigger', [
+      transition('* => active', [animate('1s', keyframes([
+        style({ backgroundColor: 'blue' }),
+        style({ backgroundColor: 'red' }),
+        style({ backgroundColor: 'orange' })
+      ]))])
     ])
+
   ]
 })
 export class AnimationSampleComponent implements OnInit {
 
   isOpen = true;
   in = true;
+  isActive = true;
 
   constructor() { }
 
@@ -47,6 +56,10 @@ export class AnimationSampleComponent implements OnInit {
 
   move() {
     this.in = !this.in;
+  }
+
+  changeActivation() {
+    this.isActive = !this.isActive;
   }
 
 }

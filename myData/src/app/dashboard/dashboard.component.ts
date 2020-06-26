@@ -8,7 +8,8 @@ import { trigger, transition, state, style, animate } from '@angular/animations'
   styleUrls: ['./dashboard.component.scss'],
   animations: [
     trigger('houseTrigger', [
-      transition(':enter', [style({ opacity: 0 }), animate('3s', style({ opacity: 1 }))
+      transition(':enter', [style({ opacity: 0 }), animate('1s', style({ opacity: 1 })), //:enter alias for void => *
+      transition(':leave', [style({ opacity: 1 }), animate('0.5s', style({ opacity: 0 }))])
       ])]),
     trigger('carTrigger', [
       transition(':enter', [style({ transform: 'translateX(100%)' }), animate('1s', style({ transform: 'translateX(0)' }))])
