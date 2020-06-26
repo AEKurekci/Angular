@@ -24,9 +24,13 @@ export class ProductDetailComponent implements OnInit {
     this.getProduct()
   }
 
-  getProduct(){
+  getProduct() {
     const id = +this.route.snapshot.paramMap.get('id');
     this.dataService.get_car(id).subscribe(car => this.product = car);
+  }
+
+  goBack() {
+    this.location.back();
   }
 
 }

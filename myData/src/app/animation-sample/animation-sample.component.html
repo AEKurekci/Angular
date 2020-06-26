@@ -2,3 +2,8 @@
     <p>the box is now {{ isOpen ? 'Open': 'Closed'}}</p>
 </div>
 <button (click)="toggle()">Toggle</button>
+
+<div [@move]="in ? 'left' : 'right'">
+    <p>the box is now {{in ? 'IN' : 'OUT'}}</p>
+</div>
+<button (click)="move()"> Move </button>

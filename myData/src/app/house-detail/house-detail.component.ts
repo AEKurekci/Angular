@@ -22,9 +22,13 @@ export class HouseDetailComponent implements OnInit {
     this.getHouse();
   }
 
-  getHouse(){
+  getHouse() {
     const id = +this.route.snapshot.paramMap.get('id')
     this.dataService.get_house(id).subscribe(house => this.house = house);
+  }
+
+  goBack() {
+    this.location.back();
   }
 
 }

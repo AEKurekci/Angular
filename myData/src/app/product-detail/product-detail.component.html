@@ -1,2 +1,23 @@
-<p>{{product.brand}}</p>
-<p>hello</p>
+<div id="item">
+    <div id="img"><img src={{product.img}}></div>
+    <ul>
+        <li>
+            <h3>{{product.brand}}</h3>
+        </li>
+        <li>
+            {{product.model}}
+        </li>
+        <li>
+            {{product.year}}
+        </li>
+        <li>
+            {{product.price | currency}}
+        </li>
+        <li>
+            {{product.explanation}}
+        </li>
+        <li>
+            <button (click)="goBack()">Back</button>
+        </li>
+    </ul>
+</div>

@@ -22,7 +22,7 @@
     <div id="products">
         <div id="house">
             <ul *ngIf="houses">
-                <li id="item" *ngFor="let house of houses">
+                <li @houseTrigger id="item" *ngFor="let house of houses">
                     <div id="img"><img src={{house.img}}></div>
                     <ul>
                         <li>
@@ -49,7 +49,7 @@
         </div>
         <div id="car">
             <ul *ngIf="cars">
-                <li id="item" *ngFor="let car of cars">
+                <li @carTrigger id="item" *ngFor="let car of cars">
                     <div id="img"><img src={{car.img}}></div>
                     <ul>
                         <li>

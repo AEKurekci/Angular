@@ -1,0 +1,19 @@
+#item{
+    background-color: rgb(5, 87, 89);
+    border: solid 1px rgb(44, 38, 36);
+    margin: 10px;
+    padding: 0px;
+    color: white;
+    img{        
+        width: 500px;
+    }
+    li{
+        padding: 5px;
+    }
+    #img{
+        text-align: center;
+        background-color: rgb(44, 38, 36);
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+}

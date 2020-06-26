@@ -1,1 +1,23 @@
-<p>{{house.type}} works!</p>
+<div id="item">
+    <div id="img"><img src={{house.img}}></div>
+    <ul>
+        <li>
+            <h3>{{house.type}}</h3>
+        </li>
+        <li>
+            {{house.location}}
+        </li>
+        <li>
+            {{house.year}}
+        </li>
+        <li>
+            {{house.price | currency}}
+        </li>
+        <li>
+            {{house.explanation}}
+        </li>
+        <li>
+            <button (click)="goBack()">Back</button>
+        </li>
+    </ul>
+</div>
