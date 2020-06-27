@@ -15,6 +15,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AnimationSampleComponent } from './animation-sample/animation-sample.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { HouseDetailComponent } from './house-detail/house-detail.component';
+import { PageNotFountComponent } from './page-not-fount/page-not-fount.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HouseDetailComponent } from './house-detail/house-detail.component';
     DashboardComponent,
     AnimationSampleComponent,
     ProductDetailComponent,
-    HouseDetailComponent
+    HouseDetailComponent,
+    PageNotFountComponent
   ],
   imports: [
     BrowserModule,

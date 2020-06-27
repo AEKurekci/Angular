@@ -8,6 +8,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AnimationSampleComponent } from './animation-sample/animation-sample.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { HouseDetailComponent } from './house-detail/house-detail.component';
+import { PageNotFountComponent } from './page-not-fount/page-not-fount.component';
 
 
 const routes: Routes = [
@@ -31,7 +32,7 @@ const routes: Routes = [
   {
     path: 'datas',
     component: DatasComponent,
-    children:[
+    children: [
       {
         path: 'data',
         component: WarOfWorld1Component
@@ -49,6 +50,10 @@ const routes: Routes = [
   {
     path: 'animation',
     component: AnimationSampleComponent
+  },
+  {
+    path: '**',
+    component: PageNotFountComponent
   }
 ];
 
