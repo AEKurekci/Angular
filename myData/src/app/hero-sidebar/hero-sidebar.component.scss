@@ -1,0 +1,25 @@
+nav {
+    background: rgb(75, 71, 66);
+    height: 100%;
+
+    ul {
+        list-style-type: none;
+        
+        li {
+            
+            a {
+                background: rgb(75, 71, 66);
+                color: #fff;
+                padding: 20px;
+            }
+            a:hover{
+                background-color: rgb(39, 34, 32);
+            }
+
+            .activated {
+                background-color: #fffb00;
+            }
+        }
+    }
+    
+}

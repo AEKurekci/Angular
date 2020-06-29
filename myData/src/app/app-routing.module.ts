@@ -9,7 +9,9 @@ import { AnimationSampleComponent } from './animation-sample/animation-sample.co
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { HouseDetailComponent } from './house-detail/house-detail.component';
 import { PageNotFountComponent } from './page-not-fount/page-not-fount.component';
-
+import { HeroesComponent } from './heroes/heroes.component';
+import { HeroListComponent } from './hero/hero-list/hero-list.component';
+import { CrisisListComponent } from './crisis-list/crisis-list.component';
 
 const routes: Routes = [
   {
@@ -50,7 +52,21 @@ const routes: Routes = [
   {
     path: 'animation',
     component: AnimationSampleComponent
-  },
+  },/*
+  {
+    path: 'heroes',
+    component: HeroesComponent,
+    children: [
+      {
+        path: 'heroes-list',
+        component: HeroListComponent
+      },
+      {
+        path: 'crisis-center',
+        component: CrisisListComponent
+      }
+    ]
+  },*/
   {
     path: '**',
     component: PageNotFountComponent
@@ -58,7 +74,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { enableTracing: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

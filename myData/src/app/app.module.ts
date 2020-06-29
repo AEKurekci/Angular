@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,11 @@ import { AnimationSampleComponent } from './animation-sample/animation-sample.co
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { HouseDetailComponent } from './house-detail/house-detail.component';
 import { PageNotFountComponent } from './page-not-fount/page-not-fount.component';
+import { CrisisListComponent } from './crisis-list/crisis-list.component';
+//import { HeroListComponent } from './hero/hero-list/hero-list.component';
+import { HeroesComponent } from './heroes/heroes.component';
+import { HeroSidebarComponent } from './hero-sidebar/hero-sidebar.component';
+import { HeroesModule } from './hero/heroes.module';
 
 @NgModule({
   declarations: [
@@ -30,13 +36,19 @@ import { PageNotFountComponent } from './page-not-fount/page-not-fount.component
     AnimationSampleComponent,
     ProductDetailComponent,
     HouseDetailComponent,
-    PageNotFountComponent
+    PageNotFountComponent,
+    CrisisListComponent,
+    //HeroListComponent,
+    HeroesComponent,
+    HeroSidebarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    HeroesModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
